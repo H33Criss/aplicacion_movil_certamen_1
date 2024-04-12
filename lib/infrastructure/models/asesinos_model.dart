@@ -14,4 +14,15 @@ class AsesinoModel {
     required this.imgUrl,
     required this.ciudadResidencia,
   });
+
+  factory AsesinoModel.fromFakeDb(Map<String, dynamic> asesino) {
+    return AsesinoModel(
+      id: asesino['id'],
+      nombreClave: asesino['nombreClave'],
+      edad: asesino['edad'],
+      asesinatos: asesino['asesinatos'],
+      imgUrl: asesino['imgUrl'],
+      ciudadResidencia: asesino['ciudadResidencia'],
+    );
+  }
 }

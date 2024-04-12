@@ -19,4 +19,14 @@ class ServicioModel {
     required this.tipoServicio,
     required this.localizacionDelServicio,
   });
+
+  factory ServicioModel.fromFakeDb(Map<String, dynamic> hotel) {
+    return ServicioModel(
+      id: hotel['id'],
+      encargado: hotel['encargado'],
+      descripcion: hotel['descripcion'],
+      tipoServicio: hotel['tipoServicio'] as TipoDeServicio,
+      localizacionDelServicio: hotel['localizacionDelServicio'],
+    );
+  }
 }

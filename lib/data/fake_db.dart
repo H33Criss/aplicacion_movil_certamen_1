@@ -6,7 +6,7 @@ List<Map<String, dynamic>> asesinosBase = [
     'nombreClave': 'Baba Yaga',
     'edad': 42,
     'asesinatos': 300,
-    'imgUrl': 'https://ejemplo.com/baba_yaga.jpg',
+    'imgUrl': 'assets/asesinos/baba_yaga.jpeg',
     'ciudadResidencia': 'Nueva York',
   },
   {
@@ -14,7 +14,7 @@ List<Map<String, dynamic>> asesinosBase = [
     'nombreClave': 'The Adjudicator',
     'edad': 38,
     'asesinatos': 150,
-    'imgUrl': 'https://ejemplo.com/the_adjudicator.jpg',
+    'imgUrl': 'assets/asesinos/the_adjudicator.jpg',
     'ciudadResidencia': 'Nueva York',
   },
   {
@@ -22,7 +22,7 @@ List<Map<String, dynamic>> asesinosBase = [
     'nombreClave': 'Zero',
     'edad': 35,
     'asesinatos': 75,
-    'imgUrl': 'https://ejemplo.com/zero.jpg',
+    'imgUrl': 'assets/asesinos/zero.jpg',
     'ciudadResidencia': 'Nueva York',
   },
   {
@@ -30,7 +30,7 @@ List<Map<String, dynamic>> asesinosBase = [
     'nombreClave': 'Cassian',
     'edad': 40,
     'asesinatos': 100,
-    'imgUrl': 'https://ejemplo.com/cassian.jpg',
+    'imgUrl': 'assets/asesinos/cassian.jpg',
     'ciudadResidencia': 'Nueva York',
   },
   {
@@ -38,7 +38,7 @@ List<Map<String, dynamic>> asesinosBase = [
     'nombreClave': 'Santino D’Antonio',
     'edad': 45,
     'asesinatos': 50,
-    'imgUrl': 'https://ejemplo.com/santino_dantonio.jpg',
+    'imgUrl': 'assets/asesinos/santino_dantonio.jpg',
     'ciudadResidencia': 'Roma',
   },
 ];

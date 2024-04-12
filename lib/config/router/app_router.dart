@@ -17,9 +17,17 @@ final appRouter = GoRouter(
       builder: (context, state) => const LoginPage(),
     ),
     GoRoute(
-      path: '/asesinos',
-      builder: (context, state) => const AsesinosScreen(),
-    ),
+        path: '/asesinos',
+        builder: (context, state) => const AsesinosScreen(),
+        routes: [
+          GoRoute(
+            path: ':id',
+            builder: (context, state) {
+              final idAsesino = state.pathParameters['id'] ?? '0';
+              return AsesinoById(id: int.parse(idAsesino));
+            },
+          ),
+        ]),
     GoRoute(
       path: '/contratos',
       builder: (context, state) => const ContratosScreen(),

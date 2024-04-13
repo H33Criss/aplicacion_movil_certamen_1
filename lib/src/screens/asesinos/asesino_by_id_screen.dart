@@ -3,6 +3,7 @@ import 'package:aplicacion_certamen1/infrastructure/models/asesinos_model.dart';
 import 'package:aplicacion_certamen1/infrastructure/models/contrato_model.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 
 class AsesinoById extends StatelessWidget {
@@ -97,7 +98,7 @@ class _AsesinoInformation extends StatelessWidget {
         Container(
           padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 14),
           width: size.width * 0.9,
-          height: size.height * 0.2,
+          height: size.height * 0.28,
           decoration: BoxDecoration(
             color: colors.surfaceVariant,
             borderRadius: BorderRadius.circular(10),
@@ -141,6 +142,24 @@ class _AsesinoInformation extends StatelessWidget {
               Row(
                 children: [
                   const Text(
+                    'Nacionalidad:',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 7),
+                  Text(
+                    asesino.nacionalidad,
+                    style: const TextStyle(
+                      fontSize: 16,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  const Text(
                     'Ciudad:',
                     style: TextStyle(
                       fontSize: 20,
@@ -152,6 +171,46 @@ class _AsesinoInformation extends StatelessWidget {
                     asesino.ciudadResidencia,
                     style: const TextStyle(
                       fontSize: 16,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  const Text(
+                    'Genero:',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 7),
+                  Text(
+                    asesino.genero.name,
+                    style: const TextStyle(
+                      fontSize: 16,
+                    ),
+                  )
+                ],
+              ),
+              Row(
+                children: [
+                  const Text(
+                    'Ocupación:',
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(width: 7),
+                  //Expanded para que funcione la propiedad overflow detro de un Row
+                  Expanded(
+                    child: Text(
+                      asesino.ocupacion,
+                      style: const TextStyle(
+                        fontSize: 16,
+                      ),
+                      overflow: TextOverflow.ellipsis,
                     ),
                   )
                 ],

@@ -1,3 +1,8 @@
+enum Genero {
+  mujer,
+  hombre,
+}
+
 class AsesinoModel {
   int id;
   String nombreClave;
@@ -5,6 +10,9 @@ class AsesinoModel {
   int asesinatos;
   String imgUrl;
   String ciudadResidencia;
+  String nacionalidad;
+  Genero genero;
+  String ocupacion;
 
   AsesinoModel({
     required this.id,
@@ -13,6 +21,9 @@ class AsesinoModel {
     required this.asesinatos,
     required this.imgUrl,
     required this.ciudadResidencia,
+    required this.nacionalidad,
+    required this.genero,
+    required this.ocupacion,
   });
 
   factory AsesinoModel.fromFakeDb(Map<String, dynamic> asesino) {
@@ -23,6 +34,9 @@ class AsesinoModel {
       asesinatos: asesino['asesinatos'],
       imgUrl: asesino['imgUrl'],
       ciudadResidencia: asesino['ciudadResidencia'],
+      nacionalidad: asesino['nacionalidad'],
+      genero: asesino['genero'] as Genero,
+      ocupacion: asesino['ocupacion'],
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:aplicacion_certamen1/config/theme/Main_Theme.dart';
+import 'package:aplicacion_certamen1/config/theme/main_theme.dart';
 import 'package:flutter/material.dart';
 
 import 'config/router/app_router.dart';

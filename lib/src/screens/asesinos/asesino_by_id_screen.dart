@@ -3,7 +3,6 @@ import 'package:aplicacion_certamen1/infrastructure/models/asesinos_model.dart';
 import 'package:aplicacion_certamen1/infrastructure/models/contrato_model.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 
 class AsesinoById extends StatelessWidget {

@@ -1,4 +1,5 @@
 import '../infrastructure/models/asesinos_model.dart';
+import '../infrastructure/models/contrato_model.dart';
 import '../infrastructure/models/servicio_model.dart';
 
 List<Map<String, dynamic>> asesinosBase = [
@@ -144,44 +145,68 @@ List<Map<String, dynamic>> hotelesBase = [
 List<Map<String, dynamic>> contratosBase = [
   {
     'id': 1,
-    'estado': 'En progreso',
-    'dineroAcordado': 20000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 15),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Franco Mangini, presidente de Chile',
+    'estado': EstadoContrato.enProgreso,
+    'recompensa': 20000,
     'esAbierto': true,
-    'idAsesinoContratado': 1,
+    'idAsesinoContratado': 1, // Asesino Baba Yaga
   },
   {
     'id': 2,
-    'estado': 'En progreso',
-    'dineroAcordado': 15000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 18),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Renato Plaza, alto ejecutivo de la CIA',
+    'estado': EstadoContrato.enProgreso,
+    'recompensa': 15000,
     'esAbierto': true,
-    'idAsesinoContratado': 2,
+    'idAsesinoContratado': 2, // Asesino The Adjudicator
   },
   {
     'id': 3,
-    'estado': 'Finalizado',
-    'dineroAcordado': 10000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 20),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Julia Martínez, líder de una organización rival',
+    'estado': EstadoContrato.completado,
+    'recompensa': 10000,
     'esAbierto': false,
-    'idAsesinoContratado': 3,
+    'idAsesinoContratado': 3, // Asesino Zero
   },
   {
     'id': 4,
-    'estado': 'En progreso',
-    'dineroAcordado': 18000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 22),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Hugo González, testigo clave en un juicio',
+    'estado': EstadoContrato.enProgreso,
+    'recompensa': 18000,
     'esAbierto': true,
-    'idAsesinoContratado': 4,
+    'idAsesinoContratado': 4, // Asesino Cassian
   },
   {
     'id': 5,
-    'estado': 'En progreso',
-    'dineroAcordado': 25000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 25),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Laura Valdez, importante empresaria',
+    'estado': EstadoContrato.enProgreso,
+    'recompensa': 25000,
     'esAbierto': true,
     'idAsesinoContratado': 5, // Asesino Santino D’Antonio
   },
   {
     'id': 6,
-    'estado': 'Finalizado',
-    'dineroAcordado': 30000,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 28),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Gabriel Jiménez, líder de una organización criminal',
+    'estado': EstadoContrato.completado,
+    'recompensa': 30000,
     'esAbierto': false,
-    'idAsesinoContratado': 1, // Baba Yaga
+    'idAsesinoContratado': 1, // Asesino Baba Yaga
   },
 ];

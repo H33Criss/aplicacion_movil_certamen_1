@@ -39,4 +39,13 @@ class AsesinoModel {
       ocupacion: asesino['ocupacion'],
     );
   }
+
+  String get generoToString {
+    switch (genero) {
+      case Genero.mujer:
+        return 'Mujer';
+      case Genero.hombre:
+        return 'Hombre';
+    }
+  }
 }

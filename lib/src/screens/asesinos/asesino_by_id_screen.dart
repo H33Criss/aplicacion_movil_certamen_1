@@ -185,7 +185,7 @@ class _AsesinoInformation extends StatelessWidget {
                   ),
                   const SizedBox(width: 7),
                   Text(
-                    asesino.genero.name,
+                    asesino.generoToString,
                     style: const TextStyle(
                       fontSize: 16,
                     ),
@@ -285,7 +285,7 @@ class _Contratos extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
-                    contrato.estado,
+                    contrato.estadoToString,
                     style: const TextStyle(
                         fontSize: 14, fontWeight: FontWeight.bold),
                   ),
@@ -293,7 +293,7 @@ class _Contratos extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Icon(MdiIcons.cashMultiple, color: Colors.green[600]),
-                      Text('\$${contrato.dineroAcordado}')
+                      Text('\$${contrato.recompensa}')
                     ],
                   )
                 ],

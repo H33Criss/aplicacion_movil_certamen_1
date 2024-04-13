@@ -1,12 +1,12 @@
-import 'package:aplicacion_certamen1/src/pages/auth/login.dart';
-import 'package:aplicacion_certamen1/src/pages/home.dart';
+import 'package:aplicacion_certamen1/src/pages/auth/login_page.dart';
+import 'package:aplicacion_certamen1/src/pages/home_page.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../src/screens/index.dart';
 
 final appRouter = GoRouter(
   //Al cargar la app vamos a primera a esta ruta
-  initialLocation: '/',
+  initialLocation: '/login',
   routes: [
     GoRoute(
       path: '/',

@@ -41,6 +41,14 @@ List<Map<String, dynamic>> asesinosBase = [
     'imgUrl': 'assets/asesinos/santino_dantonio.jpg',
     'ciudadResidencia': 'Roma',
   },
+  {
+    'id': 6,
+    'nombreClave': 'Vincent Bisset de Gramont',
+    'edad': 42,
+    'asesinatos': 200,
+    'imgUrl': 'assets/asesinos/vincent_bisset_de_gramont.jpg',
+    'ciudadResidencia': 'París',
+  }
 ];
 
 List<Map<String, dynamic>> serviciosBase = [

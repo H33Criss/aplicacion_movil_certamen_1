@@ -23,3 +23,13 @@ flutter:
   assets:
     - assets/imgs/
     - assets/asesinos/
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-VariableFont.ttf
+        - asset: assets/fonts/NotoSans-Italic-VariableFont.ttf
+    - family: Kanit
+      fonts:
+        - asset: assets/fonts/Kanit-Bold.ttf
+        - asset: assets/fonts/Kanit-Regular.ttf
+        - asset: assets/fonts/Kanit-Light.ttf

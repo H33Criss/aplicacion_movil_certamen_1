@@ -115,6 +115,7 @@ List<Map<String, dynamic>> hotelesBase = [
     'direccion': 'New York City, Estados Unidos',
     'cobroPorDia': 1000,
     'pais': 'Estados Unidos',
+    'fotoHotel': 'assets/imgs/hotel1.jpg'
   },
   {
     'id': 2,
@@ -123,6 +124,7 @@ List<Map<String, dynamic>> hotelesBase = [
     'direccion': 'Via Vittorio Veneto, Roma',
     'cobroPorDia': 1200,
     'pais': 'Italia',
+    'fotoHotel': 'assets/imgs/hotel2.jpg'
   },
   {
     'id': 3,
@@ -131,6 +133,7 @@ List<Map<String, dynamic>> hotelesBase = [
     'direccion': 'Nueva York City, Estados Unidos',
     'cobroPorDia': 800,
     'pais': 'Estados Unidos',
+    'fotoHotel': 'assets/imgs/hotel3.webp'
   },
   {
     'id': 4,
@@ -139,6 +142,7 @@ List<Map<String, dynamic>> hotelesBase = [
     'direccion': 'Desconocida',
     'cobroPorDia': 5000,
     'pais': 'Desconocido',
+    'fotoHotel': 'assets/imgs/hotel4.jpg'
   },
 ];
 

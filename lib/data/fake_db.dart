@@ -209,4 +209,15 @@ List<Map<String, dynamic>> contratosBase = [
     'esAbierto': false,
     'idAsesinoContratado': 1, // Asesino Baba Yaga
   },
+  {
+    'id': 7,
+    'nombreContratista': 'Organización The High Table',
+    'fechaLimite': DateTime(2024, 4, 10),
+    'descripcionDelObjetivo': 'Eliminar objetivo designado',
+    'objetivo': 'Alejandro Rojas, testigo protegido',
+    'estado': EstadoContrato.fallido,
+    'recompensa': 30000,
+    'esAbierto': false,
+    'idAsesinoContratado': 2, // Asesino The Adjudicator
+  },
 ];

@@ -1,3 +1,6 @@
+import 'package:aplicacion_certamen1/data/fake_db.dart';
+import 'package:aplicacion_certamen1/infrastructure/models/asesinos_model.dart';
+
 enum EstadoContrato {
   enProgreso,
   fallido,
@@ -39,8 +42,20 @@ class ContratoModel {
       idAsesinoContratado: contrato['idAsesinoContratado'],
     );
   }
-  String fechaLimiteToString() {
+  String get fechaLimiteToString {
     return '${fechaLimite.day}/${fechaLimite.month}/${fechaLimite.year}';
+  }
+
+  String get abiertoCerrado {
+    return esAbierto ? 'Abierto' : 'Cerrrado';
+  }
+
+  AsesinoModel get asesino {
+    final asesinoFromDb =
+        asesinosBase.firstWhere((a) => a['id'] == idAsesinoContratado);
+    final asesino = AsesinoModel.fromFakeDb(asesinoFromDb);
+
+    return asesino;
   }
 
   String get estadoToString {

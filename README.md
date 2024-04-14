@@ -1,6 +1,6 @@
-## Electivo - Desarrollo de Aplicaciones Moviles
+# Electivo - Desarrollo de Aplicaciones Moviles
 
-# Certamen 1 - Interfaz usuaria
+## Certamen 1 - Interfaz usuaria
 
 Paquetes Utilizados:
 
@@ -8,4 +8,5 @@ Paquetes Utilizados:
 flutter_material_design_icons
 go_router
 dotted_border
+group_list_view
 ```

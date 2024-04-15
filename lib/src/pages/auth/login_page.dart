@@ -33,7 +33,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 Positioned(
                   right: 0,
-                  top: perfectH * 0.11,
+                  top: perfectH * 0.12,
                   child: Image.asset(
                     'assets/imgs/john_wickv2.png',
                     width: size.width * 0.4,

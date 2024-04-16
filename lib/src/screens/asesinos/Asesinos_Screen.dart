@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../components/index.dart';
+
 class AsesinosScreen extends StatelessWidget {
   const AsesinosScreen({super.key});
 
@@ -41,7 +43,7 @@ class AsesinosScreen extends StatelessWidget {
                     width: double.infinity,
                     height: double.infinity,
                   ),
-                  const _CustomGradient(
+                  const CustomGradient(
                     begin: Alignment.centerRight,
                     end: Alignment.topRight,
                     stops: [0.2, 1.0],
@@ -85,35 +87,6 @@ class AsesinosScreen extends StatelessWidget {
             ),
           );
         },
-      ),
-    );
-  }
-}
-
-class _CustomGradient extends StatelessWidget {
-  final List<double> stops;
-  final List<Color> colors;
-  final AlignmentGeometry begin;
-  final AlignmentGeometry end;
-  const _CustomGradient({
-    required this.stops,
-    required this.colors,
-    required this.begin,
-    this.end = Alignment.centerLeft,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox.expand(
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: begin,
-            end: end,
-            stops: stops,
-            colors: colors,
-          ),
-        ),
       ),
     );
   }

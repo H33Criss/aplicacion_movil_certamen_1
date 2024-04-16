@@ -1,8 +1,7 @@
 import 'package:aplicacion_certamen1/data/fake_db.dart';
 import 'package:aplicacion_certamen1/infrastructure/models/hotel_model.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:aplicacion_certamen1/src/components/index.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
@@ -41,13 +40,18 @@ class HotelesScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  const CustomGradient(
+                    stops: [0.2, 1.0],
+                    colors: [Colors.black, Colors.transparent],
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.center,
+                  ),
                   Positioned(
                     bottom: 0,
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 5),
                       width: size.width * 0.5,
                       height: perfectH * 0.1,
-                      color: colors.inversePrimary.withOpacity(0.8),
                       child: Column(
                         children: [
                           Row(

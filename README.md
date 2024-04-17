@@ -32,7 +32,7 @@ flutter_staggered_grid_view
 
   <img src="https://raw.githubusercontent.com/H33Criss/aplicacion_movil_certamen_1/main/assets/pantallas/lista_asesinos.jpg" width="200" alt="Lista de Asesinos" />
 
-### _Pagina "Listado de asesinos"_
+### _Pagina "Asesino by 'id' "_
 
   <img src="https://raw.githubusercontent.com/H33Criss/aplicacion_movil_certamen_1/main/assets/pantallas/asesino_by_id.jpg" width="200" alt="Asesino by Id" />
   

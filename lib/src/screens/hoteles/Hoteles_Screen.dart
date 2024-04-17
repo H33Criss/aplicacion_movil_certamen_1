@@ -15,7 +15,6 @@ class HotelesScreen extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     double perfectH = (size.height) - (top + bottom);
 
-    final colors = Theme.of(context).colorScheme;
     final hoteles = hotelesBase.map((h) => HotelModel.fromFakeDb(h)).toList();
     return SafeArea(
       child: Scaffold(
@@ -32,6 +31,7 @@ class HotelesScreen extends StatelessWidget {
               mainAxisCellCount: 3,
               child: Stack(
                 children: [
+                  //Imagen de fondo
                   Container(
                     decoration: BoxDecoration(
                       image: DecorationImage(
@@ -40,76 +40,96 @@ class HotelesScreen extends StatelessWidget {
                       ),
                     ),
                   ),
+                  //Gradiente para la caja
                   const CustomGradient(
                     stops: [0.2, 1.0],
                     colors: [Colors.black, Colors.transparent],
                     begin: Alignment.bottomCenter,
                     end: Alignment.center,
                   ),
-                  Positioned(
-                    bottom: 0,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 5),
-                      width: size.width * 0.5,
-                      height: perfectH * 0.1,
-                      child: Column(
-                        children: [
-                          Row(
-                            children: [
-                              const Text(
-                                'Nombre: ',
-                                style: TextStyle(fontWeight: FontWeight.bold),
-                              ),
-                              Text(
-                                hotel.nombre,
-                                style: const TextStyle(
-                                    fontStyle: FontStyle.italic),
-                              ),
-                            ],
-                          ),
-                          Row(
-                            children: [
-                              const Icon(MdiIcons.mapMarkerOutline),
-                              Flexible(
-                                child: Wrap(
-                                  children: [
-                                    Text(
-                                      hotel.direccion.split(',')[0],
-                                      softWrap: true,
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                          SizedBox(
-                            child: Column(
-                              children: [
-                                Row(
-                                  children: [
-                                    Icon(MdiIcons.currencyUsd,
-                                        color: Colors.green[500]),
-                                    Text(
-                                      '${hotel.cobroPorDia}',
-                                      style: const TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        fontSize: 18,
-                                      ),
-                                    ),
-                                    const Text(' x Día')
-                                  ],
-                                ),
-                              ],
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
+                  //Caja con informacion del hotel
+                  _InformationBox(
+                    size: size,
+                    perfectH: perfectH,
+                    hotel: hotel,
                   )
                 ],
               ),
             );
           }).toList(),
+        ),
+      ),
+    );
+  }
+}
+
+class _InformationBox extends StatelessWidget {
+  const _InformationBox({
+    required this.size,
+    required this.perfectH,
+    required this.hotel,
+  });
+  final HotelModel hotel;
+  final Size size;
+  final double perfectH;
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      bottom: 0,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 5),
+        width: size.width * 0.5,
+        height: perfectH * 0.1,
+        child: Column(
+          children: [
+            Row(
+              children: [
+                const Text(
+                  'Nombre: ',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                Text(
+                  hotel.nombre,
+                  style: const TextStyle(fontStyle: FontStyle.italic),
+                ),
+              ],
+            ),
+            Row(
+              children: [
+                const Icon(MdiIcons.mapMarkerOutline),
+                Flexible(
+                  child: Wrap(
+                    children: [
+                      Text(
+                        hotel.direccion.split(',')[0],
+                        softWrap: true,
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              child: Column(
+                children: [
+                  Row(
+                    children: [
+                      Icon(MdiIcons.currencyUsd, color: Colors.green[500]),
+                      Text(
+                        '${hotel.cobroPorDia}',
+                        style: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                      ),
+                      const Text(' x Día')
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
         ),
       ),
     );

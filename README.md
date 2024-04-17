@@ -10,6 +10,7 @@ go_router
 dotted_border
 group_list_view
 flutter_staggered_grid_view
+flutter_keyboard_visibility
 ```
 
 ### _Pagina "Inicio de Sesión"_

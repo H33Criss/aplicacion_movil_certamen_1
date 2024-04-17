@@ -83,13 +83,13 @@ class _FormularioLogin extends StatelessWidget {
           children: [
             const UsmFormField(
               label: 'Correo Electronico',
-              icon: MdiIcons.emailArrowRightOutline,
+              prefixIcon: MdiIcons.emailArrowRightOutline,
               type: TextInputType.emailAddress,
             ),
             const SizedBox(height: 22),
             const UsmFormField(
               label: 'Contraseña',
-              icon: MdiIcons.keyArrowRight,
+              prefixIcon: MdiIcons.keyArrowRight,
               obscureText: true,
             ),
             const SizedBox(height: 10),

@@ -17,17 +17,18 @@ final appRouter = GoRouter(
       builder: (context, state) => const LoginPage(),
     ),
     GoRoute(
-        path: '/asesinos',
-        builder: (context, state) => const AsesinosScreen(),
-        routes: [
-          GoRoute(
-            path: ':id',
-            builder: (context, state) {
-              final idAsesino = state.pathParameters['id'] ?? '0';
-              return AsesinoById(id: int.parse(idAsesino));
-            },
-          ),
-        ]),
+      path: '/asesinos',
+      builder: (context, state) => const AsesinosScreen(),
+      routes: [
+        GoRoute(
+          path: ':id',
+          builder: (context, state) {
+            final idAsesino = state.pathParameters['id'] ?? '0';
+            return AsesinoById(id: int.parse(idAsesino));
+          },
+        ),
+      ],
+    ),
     GoRoute(
       path: '/contratos',
       builder: (context, state) => const ContratosScreen(),
@@ -35,6 +36,15 @@ final appRouter = GoRouter(
     GoRoute(
       path: '/servicios',
       builder: (context, state) => const ServiciosScreen(),
+      routes: [
+        GoRoute(
+          path: ':id',
+          builder: (context, state) {
+            final idServicio = state.pathParameters['id'] ?? '0';
+            return ServicioById(id: int.parse(idServicio));
+          },
+        ),
+      ],
     ),
     GoRoute(
       path: '/hoteles',

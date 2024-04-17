@@ -1,8 +1,6 @@
 import 'package:aplicacion_certamen1/data/fake_db.dart';
 import 'package:aplicacion_certamen1/infrastructure/models/contrato_model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:group_list_view/group_list_view.dart';
 
 class ContratosScreen extends StatelessWidget {
@@ -10,7 +8,6 @@ class ContratosScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
     final colors = Theme.of(context).colorScheme;
 
     Map<String, List> _contratos = {
@@ -31,7 +28,7 @@ class ContratosScreen extends StatelessWidget {
         ),
         body: GroupListView(
           sectionsCount: 3,
-          separatorBuilder: (context, index) => SizedBox(height: 2),
+          separatorBuilder: (context, index) => const SizedBox(height: 2),
           countOfItemInSection: (int section) {
             return _contratos.values.toList()[section].length;
           },

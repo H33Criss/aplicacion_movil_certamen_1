@@ -2,13 +2,15 @@ import 'package:flutter/material.dart';
 
 class UsmFormField extends StatelessWidget {
   final String label;
-  final IconData? icon;
+  final IconData? prefixIcon;
+  final IconData? suffixIcon;
   final TextInputType? type;
   final bool? obscureText;
   const UsmFormField({
     super.key,
     required this.label,
-    this.icon,
+    this.prefixIcon,
+    this.suffixIcon,
     this.type,
     //Valor por defecto
     this.obscureText = false,
@@ -29,7 +31,8 @@ class UsmFormField extends StatelessWidget {
         hintText: label,
         filled: true,
         fillColor: colors.surfaceVariant,
-        prefixIcon: Icon(icon),
+        prefixIcon: Icon(prefixIcon),
+        suffixIcon: Icon(suffixIcon),
       ),
     );
   }

@@ -75,38 +75,79 @@ List<Map<String, dynamic>> asesinosBase = [
 List<Map<String, dynamic>> serviciosBase = [
   {
     'id': 1,
-    'encargado': 'Gianna',
+    'encargado': 'Giorgio Caruso',
+    'status': Status.activo,
     'descripcion':
-        'Experto en vinos para asesoramiento en selección y maridaje.',
-    'tipoServicio': TipoDeServicio.sommelier.index,
-    'localizacionDelServicio': 'Via dei Condotti, Roma',
+        'El Sommelier ofrece armas y munición de alta calidad para los clientes de The Continental.',
+    'tipoServicio': TipoDeServicio.sommelier,
+    'localizacion': 'Nueva York',
+    'urlImgEncargado': 'assets/encargados/giorgio_caruso1.webp',
+    'urlImgDescriptiva': 'assets/encargados/giorgio_caruso.webp',
+    'coste': 100,
+    'productos': [
+      {
+        'nombre': 'Pistola Heckler & Koch P30L',
+        'descripcion':
+            'Arma de fuego semiautomática de la serie de pistolas Heckler & Koch',
+        'urlImg': 'assets/productos/heckler_koch_p30l.jpg',
+        'precio': 500,
+      },
+      {
+        'nombre': 'Munición 9x19mm Parabellum',
+        'descripcion': 'Munición estándar de calibre 9 mm',
+        'urlImg': 'assets/productos/municion_parabellum.jpg',
+        'precio': 20,
+      },
+    ],
   },
   {
     'id': 2,
-    'encargado': 'Dr. Müller',
+    'encargado': 'Dr. Joseph Malakhov',
+    'status': Status.activo,
     'descripcion':
-        'Cirujano especializado en extracción de balas y tratamiento de heridas.',
-    'tipoServicio': TipoDeServicio.doctor.index,
-    'localizacionDelServicio': 'Park Lane, Londres',
+        'El Doctor ofrece servicios médicos de urgencia, incluyendo tratamiento de heridas y rehabilitación rápida.',
+    'tipoServicio': TipoDeServicio.doctor,
+    'localizacion': 'Los Ángeles',
+    'urlImgEncargado': 'assets/encargados/dr_joseph_malakhov1.webp',
+    'urlImgDescriptiva': 'assets/encargados/dr_joseph_malakhov.webp',
+    'coste': 80,
+    'productos': null,
   },
   {
     'id': 3,
-    'encargado': 'Mr. Tailor',
+    'encargado': 'Winston Mercer',
+    'status': Status.activo,
     'descripcion':
-        'Confección de trajes a medida para ajuste perfecto y elegancia impecable.',
-    'tipoServicio': TipoDeServicio.sastre.index,
-    'localizacionDelServicio': 'Savile Row, Londres',
+        'El Sastre proporciona trajes hechos a medida con tejidos especiales que ofrecen resistencia a balas y mayor movilidad.',
+    'tipoServicio': TipoDeServicio.sastre,
+    'localizacion': 'Londres',
+    'urlImgEncargado': 'assets/encargados/winston_mercer1.webp',
+    'urlImgDescriptiva': 'assets/encargados/winston_mercer.webp',
+    'coste': 120,
+    'productos': [
+      {
+        'nombre': 'Traje a medida resistente a balas',
+        'descripcion':
+            'Traje de alta costura hecho a medida con tejidos especiales',
+        'urlImg': 'assets/productos/traje_resistente_balas.jpg',
+        'precio': 500,
+      },
+    ],
   },
   {
     'id': 4,
-    'encargado': 'The Cleaners',
+    'encargado': 'Mikhail Bazhaev',
+    'status': Status.activo,
     'descripcion':
-        'Equipo especializado en limpieza de escenas del crimen y eliminación de evidencias.',
-    'tipoServicio': TipoDeServicio.limpiadores.index,
-    'localizacionDelServicio': 'París, Francia',
+        'Los Limpiadores se encargan del aseo de lugares donde ha habido asesinatos y de deshacerse de los cadáveres de manera discreta.',
+    'tipoServicio': TipoDeServicio.limpiadores,
+    'localizacion': 'París',
+    'urlImgEncargado': 'assets/encargados/mikhail_bazhaev1.webp',
+    'urlImgDescriptiva': 'assets/encargados/mikhail_bazhaev.webp',
+    'coste': 90,
+    'productos': null,
   },
 ];
-
 List<Map<String, dynamic>> hotelesBase = [
   {
     'id': 1,

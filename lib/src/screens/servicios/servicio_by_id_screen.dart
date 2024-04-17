@@ -155,6 +155,7 @@ class _FondoYAvatar extends StatelessWidget {
                 ),
               ),
               child: CircleAvatar(
+                //Recordar estar medida 0.12*********
                 radius: perfectH * 0.12,
                 backgroundImage: AssetImage(servicio.urlImgEncargado),
               )),

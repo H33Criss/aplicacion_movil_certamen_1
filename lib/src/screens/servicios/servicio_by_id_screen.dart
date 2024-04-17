@@ -132,36 +132,29 @@ class _FondoYAvatar extends StatelessWidget {
         ),
         SizedBox(
           width: size.width,
-          height: perfectH * 0.35,
-          child: const CustomGradient(
-            stops: [0.2, 1.0],
-            colors: [Colors.black, Colors.transparent],
+          // 0.01 % de pixels que la imagen.
+          height: perfectH * 0.36,
+          child: CustomGradient(
+            stops: const [0.2, 1.0],
+            colors: [colors.background, Colors.transparent],
             begin: Alignment.bottomCenter,
             end: Alignment.center,
           ),
         ),
         Positioned(
-          //Le resto el radio de la imagen para que quede al centro
           top: (perfectH * 0.35) - (perfectH * 0.12),
-          child: CircleAvatar(
-            radius: perfectH * 0.12,
-            backgroundImage: AssetImage(servicio.urlImgEncargado),
-            backgroundColor: Colors
-                .transparent, // Fondo transparente para que el borde sea visible
-            // Añade un borde alrededor del CircleAvatar
-            foregroundColor: Colors
-                .transparent, // Esto es importante para que el borde se muestre correctamente
-            // Ajusta el grosor y color del borde según tus preferencias
-            child: Container(
+          child: Container(
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
                 border: Border.all(
-                  color: colors.background, // Color del borde
-                  width: 10.0, // Grosor del borde
+                  color: colors.background,
+                  width: 10.0,
                 ),
               ),
-            ),
-          ),
+              child: CircleAvatar(
+                radius: perfectH * 0.12,
+                backgroundImage: AssetImage(servicio.urlImgEncargado),
+              )),
         ),
       ],
     );

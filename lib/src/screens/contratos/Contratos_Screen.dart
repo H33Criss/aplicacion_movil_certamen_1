@@ -70,7 +70,8 @@ class ContratosScreen extends StatelessWidget {
                   children: [
                     Text(
                       'OBJETIVO:  ${contrato.objetivo}',
-                      softWrap: true, // Permitir el salto de línea
+                      softWrap:
+                          true, // permite el salto de linea junto al widget wrap
                     ),
                   ],
                 ),

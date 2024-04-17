@@ -1,8 +1,6 @@
 import 'package:aplicacion_certamen1/data/fake_db.dart';
 import 'package:aplicacion_certamen1/infrastructure/models/servicio_model.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 
 import '../../components/index.dart';
@@ -27,7 +25,7 @@ class ServicioById extends StatelessWidget {
         body: ListView(
           children: [
             Container(
-              //El margin bottom es 0,12 radio del circleAvatar
+              //El margin bottom será de 0,12 es decir el radio del circleAvatar
               margin: EdgeInsets.only(bottom: perfectH * 0.12),
               child: _FondoYAvatar(
                 size: size,
@@ -132,11 +130,16 @@ class _FondoYAvatar extends StatelessWidget {
         ),
         SizedBox(
           width: size.width,
-          // 0.01 % de pixels que la imagen.
+          // 0.35 + 0.01 % de pixels mas que la imagen.
           height: perfectH * 0.36,
           child: CustomGradient(
-            stops: const [0.2, 1.0],
-            colors: [colors.background, Colors.transparent],
+            //Cada stop corresponde a la distancia de cada color en el array
+            stops: const [0.07, 0.4, 1.0],
+            colors: [
+              colors.background, // --> este el stop 0.07
+              Colors.black, // --> este es el stop 0.4
+              Colors.transparent, // --> este el stop 1.0
+            ],
             begin: Alignment.bottomCenter,
             end: Alignment.center,
           ),

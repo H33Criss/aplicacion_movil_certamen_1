@@ -32,12 +32,19 @@ class ServiciosScreen extends StatelessWidget {
                 SizedBox(
                   width: double.infinity,
                   height: perfectH * 0.1,
-                  child: const UsmFormField(
+                  child: UsmFormField(
                     label: 'Buscar',
                     prefixIcon: Icons.search_sharp,
-                    suffixIcon: Icons.filter_list_outlined,
+                    suffixWidget: IconButton(
+                      onPressed: () {},
+                      icon: const Icon(
+                        Icons.filter_list_outlined,
+                        size: 30,
+                      ),
+                    ),
                   ),
                 ),
+                const SizedBox(height: 10),
                 SizedBox(
                   width: double.infinity,
                   height: perfectH * 0.8,

@@ -1,3 +1,4 @@
+import 'package:aplicacion_certamen1/src/components/index.dart';
 import 'package:aplicacion_certamen1/src/components/inputs/usm_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
@@ -115,23 +116,9 @@ class _FormularioLogin extends StatelessWidget {
             const SizedBox(height: 10),
             Row(
               children: [
-                //Expanded para que el boton use todo el ancho disponible
-                Expanded(
-                  child: FilledButton(
-                    style: FilledButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(vertical: 16),
-                      backgroundColor: colors.inversePrimary,
-                      shape: const RoundedRectangleBorder(
-                        borderRadius: BorderRadius.only(
-                          bottomLeft: Radius.circular(10),
-                          bottomRight: Radius.circular(10),
-                          topLeft: Radius.circular(10),
-                        ),
-                      ),
-                    ),
-                    onPressed: () => context.push('/'),
-                    child: Text('INGRESAR', style: textStyles.titleMedium),
-                  ),
+                CustomFilledButton(
+                  text: 'ingresar',
+                  onPressed: () => context.push('/'),
                 ),
               ],
             ),

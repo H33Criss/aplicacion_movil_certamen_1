@@ -2,6 +2,27 @@ import '../infrastructure/models/asesinos_model.dart';
 import '../infrastructure/models/contrato_model.dart';
 import '../infrastructure/models/servicio_model.dart';
 
+List<Map<String, dynamic>> usuariosBase = [
+  {
+    'id': 1,
+    'nombre': 'John Wick',
+    'alias': 'Baba Yaga',
+    'edad': 42,
+    'ocupacion': 'Asesino Retirado',
+    'ciudadResidencia': 'Nueva York',
+    'nacionalidad': 'Estadounidense',
+    'fotoPerfil': 'assets/usuarios/user1.webp',
+    'contratosCompletados': 300,
+    'isActive': true,
+    'habilidades': ['Artes Marciales', 'Tiro con armas', 'Sigilo'],
+    'armaPreferida': 'Heckler & Koch P30L',
+    'contactoDeEmergencia': 'Winston Mercer',
+    'enemigos': ['Santino D’Antonio', 'Viggo Tarasov'],
+    'afiliaciones': ['The Continental', 'The High Table'],
+    'especialidad': 'Combate cuerpo a cuerpo',
+  },
+];
+
 List<Map<String, dynamic>> asesinosBase = [
   {
     'id': 1,

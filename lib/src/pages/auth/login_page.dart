@@ -1,5 +1,4 @@
 import 'package:aplicacion_certamen1/src/components/index.dart';
-import 'package:aplicacion_certamen1/src/components/inputs/usm_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_material_design_icons/flutter_material_design_icons.dart';
 import 'package:go_router/go_router.dart';
@@ -32,7 +31,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 Positioned(
                   right: 0,
-                  top: perfectH * 0.12,
+                  top: perfectH * 0.127,
                   child: Image.asset(
                     'assets/imgs/john_wickv2.png',
                     width: size.width * 0.4,

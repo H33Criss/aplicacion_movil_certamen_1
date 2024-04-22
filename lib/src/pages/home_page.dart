@@ -1,3 +1,4 @@
+import 'package:aplicacion_certamen1/src/components/index.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -20,6 +21,10 @@ class HomePage extends StatelessWidget {
             height: 45.0,
           ),
         ),
+        actions: const [
+          DropDownHome(),
+          SizedBox(width: 10),
+        ],
       ),
       body: ListView.builder(
         itemCount: menuItems.length,

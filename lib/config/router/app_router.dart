@@ -17,6 +17,10 @@ final appRouter = GoRouter(
       builder: (context, state) => const LoginPage(),
     ),
     GoRoute(
+      path: '/profile',
+      builder: (context, state) => const ProfileScreen(),
+    ),
+    GoRoute(
       path: '/asesinos',
       builder: (context, state) => const AsesinosScreen(),
       routes: [

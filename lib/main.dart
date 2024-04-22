@@ -15,7 +15,9 @@ class MainApp extends StatelessWidget {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
       title: 'The High Table',
+      //En el appRouter estan centralizadas la rutas
       routerConfig: appRouter,
+      //Este es mi tema personalizado, se modularizo
       theme: MainTheme().getTheme(),
     );
   }

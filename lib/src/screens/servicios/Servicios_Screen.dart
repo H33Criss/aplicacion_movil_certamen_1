@@ -31,7 +31,6 @@ class ServiciosScreen extends StatelessWidget {
               children: [
                 SizedBox(
                   width: double.infinity,
-                  height: perfectH * 0.1,
                   child: UsmFormField(
                     label: 'Buscar',
                     prefixIcon: Icons.search_sharp,

@@ -27,6 +27,7 @@ flutter:
     - assets/asesinos/
     - assets/encargados/
     - assets/productos/
+    - assets/usuarios/
   fonts:
     - family: NotoSans
       fonts:

@@ -10,7 +10,7 @@ class ContratosScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = Theme.of(context).colorScheme;
 
-    Map<String, List> _contratos = {
+    Map<String, List> contratos = {
       'En Progreso': contratosBase
           .where((c) => c['estado'] == EstadoContrato.enProgreso)
           .toList(),
@@ -30,13 +30,13 @@ class ContratosScreen extends StatelessWidget {
           sectionsCount: 3,
           separatorBuilder: (context, index) => const SizedBox(height: 2),
           countOfItemInSection: (int section) {
-            return _contratos.values.toList()[section].length;
+            return contratos.values.toList()[section].length;
           },
           groupHeaderBuilder: (BuildContext context, int section) {
             return Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 8),
               child: Text(
-                _contratos.keys.toList()[section],
+                contratos.keys.toList()[section],
                 style:
                     const TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
               ),
@@ -44,7 +44,7 @@ class ContratosScreen extends StatelessWidget {
           },
           itemBuilder: (context, i) {
             final contratoFromDb =
-                _contratos.values.toList()[i.section][i.index];
+                contratos.values.toList()[i.section][i.index];
             final contrato = ContratoModel.fromFakeDb(contratoFromDb);
             return ListTile(
               splashColor: colors.surface,

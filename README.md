@@ -20,6 +20,10 @@ flutter_staggered_grid_view
 
   <img src="https://raw.githubusercontent.com/H33Criss/aplicacion_movil_certamen_1/main/assets/pantallas/home.jpg" width="200" alt="Home Page" />
 
+### _Pagina "Perfil del Usuario"_
+
+  <img src="https://raw.githubusercontent.com/H33Criss/aplicacion_movil_certamen_1/main/assets/pantallas/profile.jpg" width="200" alt="Home Page" />
+
 ### _Pagina "Listado de servicios"_
 
   <img src="https://raw.githubusercontent.com/H33Criss/aplicacion_movil_certamen_1/main/assets/pantallas/servicios.jpg" width="200" alt="Listado de Servicios" />

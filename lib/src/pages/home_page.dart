@@ -45,7 +45,6 @@ class HomePage extends StatelessWidget {
               item.icon,
               color: colors.primary,
             ),
-            // ignore: avoid_print
             onTap: () => context.push(item.link),
           );
         },

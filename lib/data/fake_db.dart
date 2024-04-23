@@ -31,8 +31,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 300,
     'imgUrl': 'assets/asesinos/baba_yaga.jpeg',
     'ciudadResidencia': 'Nueva York',
-    'ocupacion': 'Asesino Profesional', // Traducción de 'Professional Assassin'
-    'genero': Genero.hombre, // Género masculino
+    'ocupacion': 'Asesino Profesional',
+    'genero': Genero.hombre,
     'nacionalidad': 'Estadounidense',
   },
   {
@@ -42,8 +42,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 150,
     'imgUrl': 'assets/asesinos/the_adjudicator.jpg',
     'ciudadResidencia': 'Nueva York',
-    'ocupacion': 'Ejecutor', // Traducción de 'Executioner'
-    'genero': Genero.mujer, // Género femenino
+    'ocupacion': 'Ejecutor',
+    'genero': Genero.mujer,
     'nacionalidad': 'Estadounidense',
   },
   {
@@ -53,8 +53,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 75,
     'imgUrl': 'assets/asesinos/zero.jpg',
     'ciudadResidencia': 'Nueva York',
-    'ocupacion': 'Asesino Profesional', // Traducción de 'Professional Assassin'
-    'genero': Genero.hombre, // Género masculino
+    'ocupacion': 'Asesino Profesional',
+    'genero': Genero.hombre,
     'nacionalidad': 'Estadounidense',
   },
   {
@@ -64,8 +64,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 100,
     'imgUrl': 'assets/asesinos/cassian.jpg',
     'ciudadResidencia': 'Nueva York',
-    'ocupacion': 'Asesino Profesional', // Traducción de 'Professional Assassin'
-    'genero': Genero.hombre, // Género masculino
+    'ocupacion': 'Asesino Profesional',
+    'genero': Genero.hombre,
     'nacionalidad': 'Estadounidense',
   },
   {
@@ -75,8 +75,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 50,
     'imgUrl': 'assets/asesinos/santino_dantonio.jpg',
     'ciudadResidencia': 'Roma',
-    'ocupacion': 'Señor del crimen', // Traducción de 'Crime Lord'
-    'genero': Genero.hombre, // Género masculino
+    'ocupacion': 'Señor del crimen',
+    'genero': Genero.hombre,
     'nacionalidad': 'Italiana',
   },
   {
@@ -86,9 +86,8 @@ List<Map<String, dynamic>> asesinosBase = [
     'asesinatos': 200,
     'imgUrl': 'assets/asesinos/vincent_bisset_de_gramont.jpg',
     'ciudadResidencia': 'París',
-    'ocupacion':
-        'Miembro Senior de la Mesa Alta', // Traducción de 'Senior Member of the High Table'
-    'genero': Genero.hombre, // Género masculino
+    'ocupacion': 'Miembro Senior de la Mesa Alta',
+    'genero': Genero.hombre,
     'nacionalidad': 'Francesa',
   },
 ];

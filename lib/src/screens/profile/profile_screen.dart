@@ -358,13 +358,13 @@ class _ImageAndNombre extends StatelessWidget {
                 backgroundImage: AssetImage(usuario.fotoPerfil),
               ),
               Positioned(
-                bottom: 0,
-                right: 0,
+                bottom: perfectH * 0.0075,
+                right: perfectH * 0.007,
                 child: IconButton(
                   onPressed: () {},
                   icon: const Icon(MdiIcons.pencilCircle),
                   color: colors.primary,
-                  iconSize: 45,
+                  iconSize: perfectH * 0.05,
                 ),
               )
             ],
